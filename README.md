@@ -3,7 +3,7 @@
 *aws-sso-credentials* - A simple Python tool to simplify getting short-term credential tokens for CLI/Boto3 operations when using AWS SSO. Uses standard AWS CLI configuration files and allows easy swapping between roles/accounts.
 
 ## Motivation
-When using AWS CLI/Boto3 based tools with AWS, while using several have several accounts/roles, switching between accounts/roles, grabing temporary session credentials can take multiple steps. To make this easy, this tool makes the process easy
+When using AWS CLI/Boto3 based tools with AWS, while using several accounts/roles, switching between accounts/roles, grabing temporary session credentials can take multiple steps. To make this easy, this tool makes the process easy
 
 ## How it works
 This script piggy-backs on the new AWS CLI tool to read the SSO credentials cache and then makes Boto3 calls to retrieve the temporary credentials for the relevant account/role you want.
